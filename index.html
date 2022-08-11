@@ -11,21 +11,26 @@
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/main.css">
 
-    <link rel="shortcut icon" href="./public/img/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 
     <script defer src="./public/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://kit.fontawesome.com/1ce8bfc41b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <title>Portifólio | Robert Gonçalves Batista</title>
 </head>
 
 <body>
+    <a class="fixed-bottom text-end mb-3 me-3"
+        href="https://wa.me/5522999363638?text=Ol%C3%A1%21+Gostaria+de+te+fazer+uma+proposta+ou+contratar+seu+servi%C3%A7o%21">
+        <img src="./public/img/whatsapp.webp" alt="Logo do whatsapp" width="80px" height="80px" id="whatsapp">
+    </a>
+
     <!-- Hero section-->
-    <section style="background: var(--bs-black);" class="vh-100 d-flex align-items-center" id="home">
+    <section class="vh-100 d-flex align-items-center bg-black" id="home">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 align-self-center py-4">
+                <div class="col-12 col-md-6 align-self-center py-4">
                     <h1 class="text-light fw-light">Robert Gonçalves Batista</h1>
                     <span class="h1 text-light mb-3 pb-4">
                         Backend Developer PHP NodeJS | Frontend Developer ReactJS
@@ -41,15 +46,22 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6 text-center">
-                    <img src="./public/img/illustration.png" class="img-fluid" alt="Uma imagem impressionante">
-                </div>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ovf6grov.json"
+                    background="transparent" class="col-12 col-md-6 text-center" speed="1" loop autoplay>
+                </lottie-player>
+            </div>
+
+            <div class="text-center position-relative m-5">
+                <p class="text-light fs-5" id="bounce">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    Scroll a página
+                </p>
             </div>
         </div>
     </section>
 
     <!-- About section-->
-    <section style="background: linear-gradient(to top, var(--bs-red), var(--bs-black));" id="about">
+    <section class="bg-danger" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7 align-self-center py-4">
@@ -75,18 +87,18 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <img src="./public/img/perfil.png" class="w-100" alt="Uma imagem impressionante">
+                    <img src="./public/img/profile.png" class="w-100">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills section-->
-    <section class="container py-4 my-lg-3 py-sm-5" id="skills">
+    <section class=" container py-4 my-lg-3 py-sm-5" id="skills">
         <h2 class="text-center pt-4 pt-sm-3">Conheça-me na prática</h2>
         <p class="lead text-center mb-5">
-            Aqui estão alguns dos projetos que desenvolvi para que você possa ter uma idéia do meu estilo e das minhas
-            habilidades.
+            Aqui estão alguns dos projetos que desenvolvi para que você possa ter uma idéia do meu estilo e
+            das minhas habilidades.
         </p>
 
         <div class="row gap-3 justify-content-around">
@@ -97,9 +109,12 @@
                 <div class="card-body">
                     <h5 class="card-title">G8 Soluções</h5>
                     <p class="card-text">
-                        A G8 Soluções Integradas em SMS é fruto de uma parceria com a Base Tecnológica de Campos –
-                        TECCAMPOS, experiência bem sucedida que permitiu vencer desafios e oferecer aos seus clientes, o
-                        que há de melhor em serviços nas áreas regulamentares.</p>
+                        Este foi o primeiro site institucional que desenvolvi do zero. Neste projeto,
+                        utilizei PHP,
+                        TailwindCSS, HTML, CSS, Javascript e técnicas de otimização do SEO, acessibilidade e
+                        desempenho
+                        do site.
+                    </p>
                 </div>
                 <a href="https://treinamento.g8online.com.br" target="_blank" class="btn btn-danger">
                     <i class="fa-solid fa-eye"></i> Visualizar
@@ -112,8 +127,9 @@
                 <div class="card-body">
                     <h5 class="card-title">eCIPA</h5>
                     <p class="card-text">
-                        A Votação Online da CIPA é um serviço adequado para organizações que desejam usar um processo
-                        transparente, participativo e irreversível para escolher seus representantes.
+                        O eCIPA é um sistema de votações focado em eleições de CIPA, que foi lançado e está
+                        sendo
+                        monitorado. Aqui, trabalhei com o framework CodeIgniter, MySQL, HTML e CSS.
                     </p>
                 </div>
 
@@ -128,8 +144,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Gerenser</h5>
                     <p class="card-text">
-                        Esta ferramenta é uma solução de gerenciamento de serviços e avaliações desenvolvida pela
-                        empresa G8 Soluções Integradas em SMS para auxílio de seus colaboradores.
+                        Esta ferramenta é uma solução para controle de medições ambientais para a G8
+                        Soluções Integradas
+                        em SMS. Este foi o meu primeiro projeto feito do zero com PHP, MySQL, HTML, CSS e
+                        Javascript.
                     </p>
                 </div>
                 <a href="https://gerenser.g8online.com.br" target="_blank" class="btn btn-danger">
@@ -150,33 +168,34 @@
                 </p>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-dark" action="https://api.staticforms.xyz/submit"
-                    method="post">
+                <form class="p-4 p-md-5 border rounded-3 bg-dark text-bg-dark"
+                    action="https://api.staticforms.xyz/submit" method="post">
+                    <!-- Chave de acesso -->
                     <input type="hidden" name="accessKey" value="f1b6dad6-7a6c-407d-8716-2bfdd97631bc">
-
-                    <div class="form-floating mb-3">
-                        <input type="text" name="name" class="form-control" id="floatingName"
-                            placeholder="Digite seu nome aqui...">
-                        <label for="floatingName">Nome</label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="email" name="email" class="form-control" id="floatingEmail"
-                            placeholder="Digite seu endereço de e-mail aqui...">
-                        <label for="floatingEmail">Email</label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <textarea type="text" name="message" class="form-control" id="floatingMessage"
-                            placeholder="Digite sua mensagem aqui..." style="height: 150px;"></textarea>
-                        <label for="floatingMessage">Mensagem</label>
-                    </div>
 
                     <!-- Redireciona ao enviar -->
                     <input type="hidden" name="redirectTo" value="https://robertgoncalvesbatista.github.io/success">
 
                     <!-- Proteção contra spam -->
                     <input type="text" name="honeypot" style="display: none;">
+
+                    <div class="mb-3">
+                        <label for="inputName" class="lead">Nome</label>
+                        <input type="text" name="name" class="form-control" id="inputName"
+                            placeholder="Digite seu nome aqui...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputEmail" class="lead">Email</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail"
+                            placeholder="Digite seu endereço de e-mail aqui...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputMessage" class="lead">Mensagem</label>
+                        <textarea name="message" class="form-control" id="inputMessage"
+                            placeholder="Digite sua mensagem aqui..." rows="4"></textarea>
+                    </div>
 
                     <button class="w-100 btn btn-lg btn-danger" type="submit">
                         <i class="fa-solid fa-paper-plane"></i> Enviar mensagem
