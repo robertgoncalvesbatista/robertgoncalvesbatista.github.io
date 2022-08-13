@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Meu nome é Robert, sou Analista de Sistemas na empresa G8 Soluções Integradas em SMS, 
     onde comecei como estagiário, e curso o penúltimo período de Sistemas da Informação na Estácio de Sá.">
 
+    <meta name="author" content="Robert Gonçalves Batista">
+    <meta name="keywords" content="sites, web, desenvolvimento, frontend, backend, portifolio, php, javascript, html, css">
+    <meta name="robots" content="index,nofollow">
+
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css.map">
     <link rel="stylesheet" href="./public/css/main.css">
 
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 
     <script defer src="./public/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./public/js/bootstrap.bundle.min.js.map"></script>
+
     <script src="https://kit.fontawesome.com/1ce8bfc41b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
@@ -22,25 +30,26 @@
 
 <body>
     <a class="fixed-bottom text-end mb-3 me-3"
-        href="https://wa.me/5522999363638?text=Ol%C3%A1%21+Gostaria+de+te+fazer+uma+proposta+ou+contratar+seu+servi%C3%A7o%21">
+        href="https://wa.me/5522999363638?text=Ol%C3%A1%21+Gostaria+de+te+fazer+uma+proposta+ou+contratar+seu+servi%C3%A7o%21" target="_blank">
         <img src="./public/img/whatsapp.webp" alt="Logo do whatsapp" width="80px" height="80px" id="whatsapp">
     </a>
 
     <!-- Hero section-->
-    <section class="vh-100 d-flex align-items-center bg-black" id="home">
+    <section class="vh-100 d-flex align-items-center bg-dark" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 align-self-center py-4">
-                    <h1 class="text-light fw-light">Robert Gonçalves Batista</h1>
-                    <span class="h1 text-light mb-3 pb-4">
+                    <h1 class="text-light">Robert Gonçalves Batista</h1>
+                    <span class="h2 fw-light text-light mb-3 pb-4">
                         Backend Developer PHP NodeJS | Frontend Developer ReactJS
                     </span>
+
                     <div class="mt-2">
-                        <a class="btn btn-outline-danger" href="https://github.com/robertgoncalvesbatista">
+                        <a class="btn btn-outline-danger" href="https://github.com/robertgoncalvesbatista" target="_blank">
                             <i class="fa-brands fa-github"></i> GitHub
                         </a>
                         <a class="btn btn-outline-danger"
-                            href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/">
+                            href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
                             <i class="fa-brands fa-linkedin-in"></i> Linkedin
                         </a>
                     </div>
@@ -87,7 +96,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <img src="./public/img/profile.png" class="w-100">
+                    <img src="./public/img/profile.webp" class="w-100" alt="Minha foto de perfil">
                 </div>
             </div>
         </div>
@@ -102,7 +111,7 @@
         </p>
 
         <div class="row gap-3 justify-content-around">
-            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2" style="border: none;">
+            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2">
                 <img src="./public/img/g8online.webp" class="card-img-top"
                     alt="Website institucional da empresa G8 Soluções">
 
@@ -121,7 +130,7 @@
                 </a>
             </div>
 
-            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2" style="border: none;">
+            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2">
                 <img src="./public/img/ecipa.webp" class="card-img-top" alt="Sistema de votação online">
 
                 <div class="card-body">
@@ -138,7 +147,7 @@
                 </a>
             </div>
 
-            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2" style="border: none;">
+            <div class="card bg-light shadow-lg col-12 col-md-5 col-xl-3 py-2">
                 <img src="./public/img/gerenser.webp" class="card-img-top" alt="Gerenciador de serviços e medições">
 
                 <div class="card-body">
@@ -168,7 +177,7 @@
                 </p>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-dark text-bg-dark"
+                <form class="p-4 p-md-5 border rounded-3 bg-dark"
                     action="https://api.staticforms.xyz/submit" method="post">
                     <!-- Chave de acesso -->
                     <input type="hidden" name="accessKey" value="f1b6dad6-7a6c-407d-8716-2bfdd97631bc">
@@ -177,24 +186,24 @@
                     <input type="hidden" name="redirectTo" value="https://robertgoncalvesbatista.github.io/success">
 
                     <!-- Proteção contra spam -->
-                    <input type="text" name="honeypot" style="display: none;">
+                    <input type="text" name="honeypot" class="d-none" placeholder="Honeypot spam">
 
-                    <div class="mb-3">
-                        <label for="inputName" class="lead">Nome</label>
+                    <div class="form-floating mb-3">
                         <input type="text" name="name" class="form-control" id="inputName"
                             placeholder="Digite seu nome aqui...">
+                        <label for="inputName">Nome</label>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="inputEmail" class="lead">Email</label>
+                    <div class="form-floating mb-3">
                         <input type="email" name="email" class="form-control" id="inputEmail"
                             placeholder="Digite seu endereço de e-mail aqui...">
+                        <label for="inputEmail">Email</label>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="inputMessage" class="lead">Mensagem</label>
+                    <div class="form-floating mb-3">
                         <textarea name="message" class="form-control" id="inputMessage"
-                            placeholder="Digite sua mensagem aqui..." rows="4"></textarea>
+                            placeholder="Digite sua mensagem aqui..." style="height: 150px;"></textarea>
+                        <label for="inputMessage">Mensagem</label>
                     </div>
 
                     <button class="w-100 btn btn-lg btn-danger" type="submit">
@@ -211,17 +220,17 @@
 
             <ul class="col-12 col-lg-4 nav justify-content-center list-unstyled d-flex">
                 <li class="ms-3">
-                    <a class="text-danger" href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/">
+                    <a class="text-danger" href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
                         <i class="fa-brands fa-linkedin-in fs-2"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-danger" href="https://github.com/robertgoncalvesbatista">
+                    <a class="text-danger" href="https://github.com/robertgoncalvesbatista" target="_blank">
                         <i class="fa-brands fa-github fs-2"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-danger" href="mailto:robert.comunicar@gmail.com">
+                    <a class="text-danger" href="mailto:robert.comunicar@gmail.com" target="_blank">
                         <i class="fa-solid fa-envelope fs-2"></i>
                     </a>
                 </li>
