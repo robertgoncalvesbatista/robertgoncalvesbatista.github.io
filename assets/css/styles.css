@@ -1,0 +1,110 @@
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+
+    background-color: black;
+    width: 100%;
+}
+
+header nav {
+    max-width: 1200px;
+
+    padding: 1.5rem 0;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav .menu li {
+    font-weight: 600;
+}
+
+header nav .button-call-me {
+    padding: 1rem 1.5rem;
+
+    background-color: #92e3a9;
+    font-size: 12pt;
+
+    border-radius: 6px;
+}
+
+/* Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Inicial */
+main .home {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    align-items: center;
+}
+
+main .home div h1 {
+    font-size: 26pt;
+}
+
+main .home div small {
+    font-size: 20pt;
+}
+
+main .home div img {
+    width: 400px;
+}
+
+/* Sobre mim */
+main .about {
+    height: 100vh;
+
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+/* Portifolio */
+main .portfolio {
+    height: 100vh;
+}
+
+/* Serviços */
+main .services {
+    height: 100vh;
+}
+
+/* Rodapé */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div ul {
+    display: flex;
+    gap: 1rem;
+}

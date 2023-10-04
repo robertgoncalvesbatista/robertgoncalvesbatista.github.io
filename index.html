@@ -18,36 +18,65 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="./assets/code-icon-black.ico" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="./assets/code-icon-white.ico" rel="icon" media="(prefers-color-scheme: dark)" />
 
-    <script defer src="./assets/js/index.js"></script>
+
+    <script src="./assets/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/65f7a3e6fa.js" crossorigin="anonymous"></script>
 
     <title>Portifólio | Robert Gonçalves Batista</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Services</li>
-        </ul>
+    <header>
+        <nav>
+            <h1>ROBERT</h1>
 
-        <button type="button">Falar comigo</button>
-    </nav>
+            <ul class="menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Services</li>
+            </ul>
+
+            <button type="button" class="button-call-me">Área do Cliente</button>
+        </nav>
+    </header>
 
     <main>
         <section class="home">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur nisi in iste adipisci rem sequi?
-                Ullam atque sunt facere voluptatibus, autem eveniet velit illo similique nisi! Facilis, reiciendis
-                dolorum?</p>
+            <div>
+                <h1>Robert Gonçalves Batista</h1>
+                <small>Backend Developer Laravel ExpressJS | Frontend Developer ReactJS</small>
+            </div>
+            <div>
+                <img src="./assets/img/9319773_4136916.svg" alt="" srcset="">
+            </div>
         </section>
 
         <section class="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur nisi in iste adipisci rem sequi?
-                Ullam atque sunt facere voluptatibus, autem eveniet velit illo similique nisi! Facilis, reiciendis
-                dolorum?</p>
+            <div>
+                <h2>Sobre mim</h2>
+                <p>Olá, sou o Robert, tenho 20 anos e atualmente ocupo o cargo de Desenvolvedor Júnior II na empresa
+                    e-Get
+                    Desenvolvimento de Sistemas LTDA. Minha atuação se estende por toda a pilha de desenvolvimento,
+                    abrangendo as linguagens PHP e Javascript, além das tecnologias Node.js, React e Laravel.
+                </p>
+                <p>Desde cedo, desenvolvi um grande interesse por computadores. Aos nove anos, fiz meu primeiro curso de
+                    informática básica, e aos doze, tive a oportunidade de explorar o mundo do Web Design, o que me deu
+                    uma
+                    sutil introdução à programação, especialmente ao HTML.</p>
+                <p>Minha paixão pela programação realmente floresceu quando eu tinha 15 anos. Foi nessa época que
+                    conheci as
+                    linguagens de programação Pascal e Java durante um curso de Analista de TI. Além disso, aprendi a
+                    montar, desmontar, limpar e consertar computadores, o que me permitiu conquistar meu certificado de
+                    Analista de TI.</p>
+            </div>
+
+            <div>
+                <img src="./assets/img/profile.webp" alt="">
+            </div>
         </section>
 
         <section class="portfolio">
@@ -64,9 +93,22 @@
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur nisi in iste adipisci rem sequi?
-            Ullam atque sunt facere voluptatibus, autem eveniet velit illo similique nisi! Facilis, reiciendis
-            dolorum?</p>
+        <div>
+            <span>Robert Gonçalves Batista</span>
+
+            <ul>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-regular fa-envelope"></i></li>
+            </ul>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Services</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
