@@ -2,25 +2,22 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description"
-        content="Meu nome é Robert, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de Sistemas LTDA e estudo Sistemas da Informação na universidade Estácio de Sá.">
+    <meta name="description" content="Meu nome é Robert, tenho 21 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
+                    Sistemas LTDA e curso Sistemas da Informação na Universidade Estácio de Sá." />
 
-    <meta name="author" content="Robert Gonçalves Batista">
+    <meta name="author" content="Robert Gonçalves Batista" />
     <meta name="keywords"
-        content="site, web, desenvolvimento, frontend, backend, portifolio, php, javascript, html, css">
-    <meta name="robots" content="index,nofollow">
+        content="site, web, desenvolvimento, frontend, backend, portifolio, php, javascript, html, css" />
+    <meta name="robots" content="index,nofollow" />
 
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <link href="./assets/code-icon-black.ico" rel="icon" media="(prefers-color-scheme: light)" />
     <link href="./assets/code-icon-white.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-
 
     <script src="./assets/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/65f7a3e6fa.js" crossorigin="anonymous"></script>
@@ -29,87 +26,213 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>ROBERT</h1>
+    <!-- Navbar  Section Start -->
+    <header class="">
+        <a href="#" class="logo">RBatista</a>
 
-            <ul class="menu">
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Services</li>
-            </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-            <button type="button" class="button-call-me">Área do Cliente</button>
-        </nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contatos</a></li>
+            <div class="fa-solid fa-moon" id="darkmode"></div>
+        </ul>
     </header>
+    <!-- Navbar Section End -->
 
-    <main>
-        <section class="home">
-            <div>
-                <h1>Robert Gonçalves Batista</h1>
-                <small>Backend Developer Laravel ExpressJS | Frontend Developer ReactJS</small>
-            </div>
-            <div>
-                <img src="./assets/img/9319773_4136916.svg" alt="" srcset="">
-            </div>
-        </section>
-
-        <section class="about">
-            <div>
-                <h2>Sobre mim</h2>
-                <p>Olá, sou o Robert, tenho 20 anos e atualmente ocupo o cargo de Desenvolvedor Júnior II na empresa
-                    e-Get
-                    Desenvolvimento de Sistemas LTDA. Minha atuação se estende por toda a pilha de desenvolvimento,
-                    abrangendo as linguagens PHP e Javascript, além das tecnologias Node.js, React e Laravel.
-                </p>
-                <p>Desde cedo, desenvolvi um grande interesse por computadores. Aos nove anos, fiz meu primeiro curso de
-                    informática básica, e aos doze, tive a oportunidade de explorar o mundo do Web Design, o que me deu
-                    uma
-                    sutil introdução à programação, especialmente ao HTML.</p>
-                <p>Minha paixão pela programação realmente floresceu quando eu tinha 15 anos. Foi nessa época que
-                    conheci as
-                    linguagens de programação Pascal e Java durante um curso de Analista de TI. Além disso, aprendi a
-                    montar, desmontar, limpar e consertar computadores, o que me permitiu conquistar meu certificado de
-                    Analista de TI.</p>
-            </div>
-
-            <div>
-                <img src="./assets/img/profile.webp" alt="">
-            </div>
-        </section>
-
-        <section class="portfolio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur nisi in iste adipisci rem sequi?
-                Ullam atque sunt facere voluptatibus, autem eveniet velit illo similique nisi! Facilis, reiciendis
-                dolorum?</p>
-        </section>
-
-        <section class="services">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur nisi in iste adipisci rem sequi?
-                Ullam atque sunt facere voluptatibus, autem eveniet velit illo similique nisi! Facilis, reiciendis
-                dolorum?</p>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <span>Robert Gonçalves Batista</span>
-
-            <ul>
-                <li><i class="fa-brands fa-linkedin-in"></i></li>
-                <li><i class="fa-brands fa-github"></i></li>
-                <li><i class="fa-regular fa-envelope"></i></li>
-            </ul>
-
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Services</li>
-            </ul>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
         </div>
-    </footer>
+
+        <div class="home-img">
+            <img src="./assets/img/profile.webp" alt="Foto de perfil do Robert" />
+        </div>
+
+        <div class="home-text">
+            <span>Olá, eu sou</span>
+            <h1>Robert Batista</h1>
+            <h2>Fullstack Developer</h2>
+
+            <p>Baixe o meu currículo abaixo...</p>
+            <a href="#contact" class="btn">Download CV</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Sobre mim</h2>
+            <span>Introdução</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./assets/img/profile.webp" alt="Foto de perfil do Robert" />
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Meu nome é Robert, tenho 21 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
+                    Sistemas LTDA e curso Sistemas da Informação na Universidade Estácio de Sá.
+                </p>
+
+                <p>
+                    Minha carreira começou na G8 Soluções Integradas em SMS LTDA como suporte, estando responsável pela
+                    manutenção e construção da infraestrutura de rede de computadores. E mais tarde, desenvolvi sistemas
+                    como soluções que atendessem aos clientes da empresa.
+                </p>
+
+                <p>
+                    Eu decidi que seguiria como programador quando aos 15 anos eu conheci as linguagens de programação
+                    Pascal e Java através do curso de Analista de TI na Prepara Cursos, onde também aprendi a montar,
+                    desmontar, limpar e consertar computadores.
+                </p>
+
+                <div class="information">
+                    <div class="info-box">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Robert Gonçalves Batista</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+55 (22) 99936-3638</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>robert.comunicar@gmail.com</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn">Download Cv</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Habilidades</h2>
+            <span>Minhas habilidades</span>
+        </div>
+
+        <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>95%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+
+            <div class="skills-img">
+                <img src="./assets/img/profile.webp" alt="Foto de perfil do Robert" />
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Serviços</h2>
+            <span>Meus serviços</span>
+        </div>
+
+        <div class="services-content">
+            <div class="services-box">
+                <i class="fa-solid fa-desktop"></i>
+                <h3>Desenvolvimento Web</h3>
+                <a href="https://chat.openai.com/share/8010c320-f81d-44b3-9676-a6ccbde70843">Leia mais...</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-server"></i>
+                <h3>Desenvolvimento Backend</h3>
+                <a href="https://chat.openai.com/share/99128e66-699f-4e39-a72d-4d0115db4389">Leia mais...</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-brush"></i>
+                <h3>SEO</h3>
+                <a href="https://chat.openai.com/share/70726ee8-d1fc-496d-9b4b-2354b67f2ecb">Leia mais...</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Desenvolvimento APP</h3>
+                <a href="https://chat.openai.com/share/e834d11c-7475-40fc-ab5b-c3bf91dc90c4">Leia mais...</a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contato</h2>
+            <span>Contate me</span>
+        </div>
+
+        <div class="contact-form">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- Chave de acesso -->
+                <input type="hidden" name="accessKey" value="f1b6dad6-7a6c-407d-8716-2bfdd97631bc">
+
+                <!-- Redireciona ao enviar -->
+                <input type="hidden" name="redirectTo" value="https://robertgoncalvesbatista.github.io/success">
+
+                <!-- Proteção contra spam -->
+                <input type="text" name="honeypot" class="d-none" placeholder="Honeypot spam" style="display: none;">
+
+                <input type="text" name="name" placeholder="Seu nome..." />
+                <input type="email" name="email" placeholder="Seu e-mail..." />
+                <textarea name="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                <input type="submit" value="Enviar" class="contact-button" />
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <div class="copyright">
+        © Robert Gonçalves Batista | All Right Reserved.
+        <p></p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
