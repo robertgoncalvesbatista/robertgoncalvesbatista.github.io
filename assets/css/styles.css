@@ -214,6 +214,25 @@ header.shadow {
     margin-top: 4rem;
 }
 
+/* Tecnologias */
+.technologies-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.technologies-grid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.technologies-grid img {
+    max-width: 80px;
+    width: 100%;
+}
+
+/* Serviços */
 .services-content {
     display: flex;
     justify-content: center;
@@ -226,6 +245,7 @@ header.shadow {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Contatos */
 .contact-form {
     display: grid;
     place-items: center;
