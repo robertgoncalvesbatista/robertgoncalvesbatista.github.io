@@ -87,13 +87,9 @@ form textarea {
   display: none;
 }
 
-#darkmode {
-  font-size: 22px;
-  cursor: pointer;
-}
-
 .heading {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .heading h2 {
@@ -119,6 +115,7 @@ form textarea {
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar a {
@@ -135,7 +132,7 @@ form textarea {
 .home {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   align-items: center;
@@ -186,7 +183,6 @@ form textarea {
 }
 
 .about-container {
-  margin-top: 2rem;
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
@@ -201,16 +197,40 @@ form textarea {
 
 /* Tecnologias */
 .projects-container {
-  margin-top: 2rem;
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
 }
 
-.projects-container img {
-  margin-top: 2rem;
+.project-card {
+  border-radius: 13px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   width: 100%;
-  border-radius: 8px;
+  transition: 0.1s ease-in-out;
+}
+
+.project-card img:hover {
+  opacity: 0.75;
+}
+
+.project-card div {
+  padding: 1rem;
+  color: #000;
+}
+
+.project-card div span {
+  font-size: var(--p-font);
+  color: rgb(2, 166, 70);
 }
 
 .copyright {
@@ -230,8 +250,15 @@ form textarea {
   gap: 1rem;
 }
 
-.copyright div a i {
+.copyright div a {
   color: #fff;
+}
+
+.copyright div a:hover {
+  color: var(--hover);
+}
+
+.copyright div a i {
   font-size: 14pt;
 }
 
@@ -243,12 +270,6 @@ form textarea {
 
   section {
     padding: 50px 4%;
-  }
-
-  .projects-grid {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -287,12 +308,6 @@ form textarea {
     color: var(--text-color);
   }
 
-  #darkmode {
-    position: absolute;
-    top: 1.4rem;
-    right: 2rem;
-  }
-
   .navbar.active {
     top: 100%;
   }
@@ -329,10 +344,9 @@ form textarea {
     justify-content: center;
   }
 
-  .projects-grid {
+  .projects-container {
     display: grid;
-    gap: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
   }
 }
 
@@ -349,11 +363,5 @@ form textarea {
   .home-text h2 {
     font-size: 0.9rem;
     font-weight: 500;
-  }
-
-  .projects-grid {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: 1fr 1fr;
   }
 }

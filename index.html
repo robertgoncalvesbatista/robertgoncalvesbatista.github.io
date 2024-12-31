@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Meu nome é Robert, tenho 21 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
+    <meta name="description" content="Meu nome é Robert, tenho 22 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
                     Sistemas LTDA e curso Sistemas da Informação na Universidade Estácio de Sá." />
 
     <meta name="author" content="Robert Gonçalves Batista" />
@@ -36,10 +36,8 @@
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#services">Projetos</a></li>
-            <li><a href="#contact">Contatos</a></li>
-            <div class="fa-solid fa-moon" id="darkmode"></div>
+            <li><a href="#projects">Projetos</a></li>
+            <i class="fa-solid fa-moon" id="darkmode" style="cursor: pointer;"></i>
         </ul>
     </header>
     <!-- Navbar Section End -->
@@ -47,14 +45,19 @@
     <!-- Home Section Start -->
     <section class="home" id="home">
         <div class="social">
-            <a href="https://github.com/robertgoncalvesbatista/"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/robert_docker/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/"><i
-                    class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="https://github.com/robertgoncalvesbatista/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/robert_docker/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i></i>
+            </a>
         </div>
 
         <div class="home-img">
-            <img src="./assets/img/profile.jpg" alt="Foto de perfil do Robert" style="border-radius: 50%;" />
+            <img src="./assets/img/profile.jpg" alt="Foto de perfil do Robert" style="border-top-left-radius: 5%; border-top-right-radius: 25%; border-bottom-left-radius: 25%; border-bottom-right-radius: 5%;" />
         </div>
 
         <div class="home-text">
@@ -90,7 +93,7 @@
     <section class="about" id="about">
         <div class="heading">
             <h2>Sobre mim</h2>
-            <span>Introdução</span>
+            <span>Informações sobre mim</span>
         </div>
 
         <div class="about-container">
@@ -99,20 +102,16 @@
                     Meu nome é Robert, tenho 22 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
                     Sistemas LTDA e formado em Sistemas da Informação pela Universidade Estácio de Sá.
                 </p>
-
                 <p>
                     Minha carreira começou na G8 Soluções Integradas em SMS LTDA como suporte, estando responsável pela
                     manutenção e construção da infraestrutura de rede de computadores. E mais tarde, desenvolvi sistemas
                     como soluções que atendessem aos clientes da empresa.
                 </p>
-
                 <p>
                     Eu decidi que seguiria como programador aos 15 anos, quando eu conheci as linguagens de programação
                     Pascal e Java através do curso de Analista de TI na Prepara Cursos, onde também aprendi a montar,
                     desmontar, limpar e consertar computadores.
                 </p>
-
-
             </div>
         </div>
     </section>
@@ -122,11 +121,50 @@
     <section class="projects" id="projects">
         <div class="heading">
             <h2>Projetos</h2>
-            <span>Tecnologias que eu conheço</span>
+            <span>Projetos que eu desenvolvi</span>
         </div>
 
         <div class="projects-container">
-            <img src="./assets/img/one-piece.png" alt="One Piece" />
+            <div class="project-card">
+                <a href="https://robertgoncalvesbatista.github.io/one-piece/" target="_blank">
+                    <img src="./assets/img/one-piece.png" alt="One Piece" />
+
+                    <div>
+                        <h3>One Piece</h3>
+                        <span>HTML | CSS | Javascript</span>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://robertgoncalvesbatista.github.io/pokemon/" target="_blank">
+                    <img src="./assets/img/pokemon.png" alt="Pokémon" />
+
+                    <div>
+                        <h3>Pokémon</h3>
+                        <span>React | Typescript | CSS | PokeAPI</span>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://robertgoncalvesbatista.github.io/valorant/" target="_blank">
+                    <img src="./assets/img/valorant.png" alt="Valorant" />
+
+                    <div>
+                        <h3>Valorant</h3>
+                        <span>NextJS | Typescript | TailwindCSS | Valorant-API</span>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://robertgoncalvesbatista.github.io/kings-and-pigs/" target="_blank">
+                    <img src="./assets/img/kings-pigs.png" alt="Kings and Pigs" />
+
+                    <div>
+                        <h3>Kings and Pigs</h3>
+                        <span>HTML | CSS | Javascript</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
     <!-- Projects Section End -->
@@ -135,13 +173,13 @@
         <p>© Robert Gonçalves Batista | All Right Reserved.</p>
 
         <div>
-            <a href="https://github.com/robertgoncalvesbatista/">
+            <a href="https://github.com/robertgoncalvesbatista/" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/robert_docker/">
+            <a href="https://www.instagram.com/robert_docker/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/">
+            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i></i>
             </a>
         </div>
