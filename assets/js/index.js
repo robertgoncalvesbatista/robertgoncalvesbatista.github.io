@@ -1,56 +1,44 @@
-/* Theme mode */
-let header = document.querySelector("header");
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+const header = document.querySelector(".site-header");
+const menu = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+const darkMode = document.querySelector("#darkmode");
+const themeIcon = darkMode.querySelector(".theme-icon");
+
+const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+function setTheme(isDark) {
+  document.body.classList.toggle("active", isDark);
+  darkMode.setAttribute("aria-pressed", String(isDark));
+  darkMode.setAttribute("aria-label", isDark ? "Ativar tema claro" : "Ativar tema escuro");
+  themeIcon.textContent = isDark ? "☾" : "☀";
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+}
+
+setTheme(savedTheme ? savedTheme === "dark" : prefersDark);
 
 window.addEventListener("scroll", () => {
-  header.classList.toggle("shadow", window.scrollY > 0);
+  header.classList.toggle("shadow", window.scrollY > 12);
 });
 
-menu.onclick = () => {
-  navbar.classList.toggle("active");
-};
+menu.addEventListener("click", () => {
+  const isExpanded = navbar.classList.toggle("active");
+  menu.classList.toggle("active", isExpanded);
+  menu.setAttribute("aria-expanded", String(isExpanded));
+  menu.setAttribute("aria-label", isExpanded ? "Fechar menu" : "Abrir menu");
+});
 
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
-
-let darkmode = document.querySelector("#darkmode");
-
-darkmode.onclick = () => {
-  if (darkmode.classList.contains("fa-moon")) {
-    darkmode.classList.replace("fa-moon", "fa-sun");
-    document.body.classList.add("active");
-  } else {
-    darkmode.classList.replace("fa-sun", "fa-moon");
-    document.body.classList.remove("active");
-  }
-};
-
-/* Infinite scroll images */
-const scrollers = document.querySelectorAll(".scroller");
-
-// If a user hasn't opted in for recuded motion, then we add the animation
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    // add data-animated="true" to every `.scroller` on the page
-    scroller.setAttribute("data-animated", true);
-
-    // Make an array from the elements within `.scroller-inner`
-    const scrollerInner = scroller.querySelector(".scroller__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
-
-    // For each item in the array, clone it
-    // add aria-hidden to it
-    // add it into the `.scroller-inner`
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    });
+navbar.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    menu.classList.remove("active");
+    menu.setAttribute("aria-expanded", "false");
+    menu.setAttribute("aria-label", "Abrir menu");
   });
-}
+});
+
+darkMode.addEventListener("click", () => {
+  setTheme(!document.body.classList.contains("active"));
+});
+
+document.querySelector("#current-year").textContent = new Date().getFullYear();
