@@ -5,188 +5,213 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="description" content="Meu nome é Robert, tenho 22 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
-                    Sistemas LTDA e curso Sistemas da Informação na Universidade Estácio de Sá." />
-
+    <meta name="theme-color" content="#0b0f14" />
+    <meta name="description"
+        content="Portfólio de Robert Gonçalves Batista, desenvolvedor full stack especializado em PHP, Laravel, JavaScript, React e React Native." />
     <meta name="author" content="Robert Gonçalves Batista" />
     <meta name="keywords"
-        content="site, web, desenvolvimento, frontend, backend, portifolio, php, javascript, html, css" />
-    <meta name="robots" content="index,nofollow" />
+        content="Robert Gonçalves Batista, desenvolvedor full stack, portfolio, PHP, Laravel, React, React Native" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Robert Gonçalves Batista | Desenvolvedor Full Stack" />
+    <meta property="og:description"
+        content="Projetos, tecnologias e experiências de Robert Gonçalves Batista." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/img/profile.webp" />
 
-    <link rel="stylesheet" href="./assets/css/infinite-scroll.css" />
+    <link rel="preload" href="./assets/img/profile.webp" as="image" fetchpriority="high" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-
     <link href="./assets/code-icon-black.ico" rel="icon" media="(prefers-color-scheme: light)" />
     <link href="./assets/code-icon-white.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-
     <script src="./assets/js/index.js" defer></script>
-    <script src="https://kit.fontawesome.com/65f7a3e6fa.js" crossorigin="anonymous"></script>
-
-    <title>Portifólio | Robert Gonçalves Batista</title>
+    <title>Robert Gonçalves Batista | Desenvolvedor Full Stack</title>
 </head>
 
 <body>
-    <!-- Navbar  Section Start -->
-    <header>
-        <a href="#" class="logo">{Robert}</a>
+    <header class="site-header">
+        <a href="#home" class="logo" aria-label="Ir para o início">
+            <span class="logo-mark">R</span>
+            <span>Robert Batista</span>
+        </a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <button class="menu-icon" id="menu-icon" type="button" aria-label="Abrir menu"
+            aria-controls="main-navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <i class="fa-solid fa-moon" id="darkmode" style="cursor: pointer;"></i>
-        </ul>
+        <nav id="main-navigation" aria-label="Navegação principal">
+            <ul class="navbar">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#stack">Tecnologias</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li>
+                    <button class="theme-toggle" id="darkmode" type="button"
+                        aria-label="Ativar tema claro" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true">☀</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- Navbar Section End -->
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-        <div class="social">
-            <a href="https://github.com/robertgoncalvesbatista/" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/robert_docker/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i></i>
-            </a>
-        </div>
-
-        <div class="home-img">
-            <img src="./assets/img/profile.jpg" alt="Foto de perfil do Robert" style="border-top-left-radius: 5%; border-top-right-radius: 25%; border-bottom-left-radius: 25%; border-bottom-right-radius: 5%;" />
-        </div>
-
-        <div class="home-text">
-            <span>Olá, eu sou</span>
-            <h1>Robert Batista</h1>
-            <h2>Fullstack Developer | Laravel | React | React Native</h2>
-        </div>
-    </section>
-    <!-- Home Section End -->
-
-    <div class="scroller" data-speed="fast">
-        <div class="tag-list scroller__inner">
-            <img src="./assets/img/svg/html.svg" alt="HTML" />
-            <img src="./assets/img/svg/css.svg" alt="CSS" />
-            <img src="./assets/img/svg/javascript.svg" alt="Javascript" />
-            <img src="./assets/img/svg/typescript.svg" alt="Typescript" />
-            <img src="./assets/img/svg/php.svg" alt="PHP" />
-            <img src="./assets/img/svg/nodejs.svg" alt="Node.js" />
-            <img src="./assets/img/svg/react.svg" alt="React" />
-            <img src="./assets/img/svg/laravel.svg" alt="Laravel" />
-            <img src="./assets/img/svg/mysql.svg" alt="MySQL" />
-            <img src="./assets/img/svg/postgresql.svg" alt="PostgreSQL" />
-            <img src="./assets/img/svg/mongodb.svg" alt="MongoDB" />
-            <img src="./assets/img/svg/docker.svg" alt="Docker" />
-            <img src="./assets/img/svg/git.svg" alt="Git" />
-            <img src="./assets/img/svg/aws.svg" alt="AWS" />
-            <img src="./assets/img/svg/heroku.svg" alt="Heroku" />
-            <img src="./assets/img/svg/redis.svg" alt="Redis" />
-        </div>
-    </div>
-
-    <!-- About Section Start -->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>Sobre mim</h2>
-            <span>Informações sobre mim</span>
-        </div>
-
-        <div class="about-container">
-            <div style="margin-top: 2rem;">
-                <p>
-                    Meu nome é Robert, tenho 22 anos, sou Desenvolvedor Júnior II na empresa e-Get Desenvolvimento de
-                    Sistemas LTDA e formado em Sistemas da Informação pela Universidade Estácio de Sá.
+    <main>
+        <section class="home" id="home">
+            <div class="home-copy">
+                <p class="eyebrow"><span></span> Desenvolvedor Full Stack</p>
+                <h1>Construindo soluções digitais com <em>propósito.</em></h1>
+                <p class="home-lead">
+                    Sou Robert, desenvolvedor de software formado em Sistemas da Informação.
+                    Transformo necessidades reais em aplicações modernas, escaláveis e acessíveis.
                 </p>
-                <p>
-                    Minha carreira começou na G8 Soluções Integradas em SMS LTDA como suporte, estando responsável pela
-                    manutenção e construção da infraestrutura de rede de computadores. E mais tarde, desenvolvi sistemas
-                    como soluções que atendessem aos clientes da empresa.
-                </p>
-                <p>
-                    Eu decidi que seguiria como programador aos 15 anos, quando eu conheci as linguagens de programação
-                    Pascal e Java através do curso de Analista de TI na Prepara Cursos, onde também aprendi a montar,
-                    desmontar, limpar e consertar computadores.
-                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Ver projetos <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="mailto:robert.comunicar@gmail.com">Entrar em contato</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section End -->
+            <div class="home-visual" aria-label="Retrato de Robert Batista">
+                <div class="portrait-wrap">
+                    <img src="./assets/img/profile.webp" alt="Foto de perfil de Robert Gonçalves Batista"
+                        width="720" height="720" fetchpriority="high" decoding="async" />
+                </div>
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Disponível para conversar
+                </div>
+            </div>
+        </section>
 
-    <!-- Projects Section Start -->
-    <section class="projects" id="projects">
-        <div class="heading">
-            <h2>Projetos</h2>
-            <span>Projetos que eu desenvolvi</span>
-        </div>
-
-        <div class="projects-container">
-            <div class="project-card">
-                <a href="https://robertgoncalvesbatista.github.io/one-piece/" target="_blank">
-                    <img src="./assets/img/one-piece.png" alt="One Piece" />
-
-                    <div>
-                        <h3>One Piece</h3>
-                        <span>HTML | CSS | Javascript</span>
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <p class="section-kicker">01 — Sobre mim</p>
+                <h2>Da infraestrutura ao desenvolvimento.</h2>
+            </div>
+            <div class="about-layout">
+                <div class="about-lead">
+                    <p>
+                        Minha trajetória começou em suporte e infraestrutura de rede.
+                        Essa experiência trouxe uma visão prática de sistemas, usuários e operação —
+                        hoje aplicada no desenvolvimento de soluções completas.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <p>
+                        Sou formado em Sistemas da Informação pela Universidade Estácio de Sá e atuo
+                        com desenvolvimento web e aplicações, criando funcionalidades que resolvem
+                        problemas concretos.
+                    </p>
+                    <p>
+                        Tenho interesse em arquitetura limpa, interfaces consistentes, boas práticas
+                        e tecnologias que façam sentido para cada desafio.
+                    </p>
+                    <div class="experience-list">
+                        <div><strong>e-Get</strong><span>Desenvolvimento de Sistemas</span></div>
+                        <div><strong>G8 Soluções</strong><span>Suporte e desenvolvimento</span></div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="project-card">
-                <a href="https://robertgoncalvesbatista.github.io/pokemon/" target="_blank">
-                    <img src="./assets/img/pokemon.png" alt="Pokémon" />
+        </section>
 
-                    <div>
-                        <h3>Pokémon</h3>
-                        <span>React | Typescript | CSS | PokeAPI</span>
-                    </div>
-                </a>
+        <section class="stack section" id="stack">
+            <div class="section-heading">
+                <p class="section-kicker">02 — Tecnologias</p>
+                <h2>Ferramentas que uso no dia a dia.</h2>
             </div>
-            <div class="project-card">
-                <a href="https://robertgoncalvesbatista.github.io/valorant/" target="_blank">
-                    <img src="./assets/img/valorant.png" alt="Valorant" />
+            <div class="stack-grid" aria-label="Tecnologias que utilizo">
+                <div class="stack-item"><img src="./assets/img/svg/php.svg" alt="" width="44" height="44" /><span>PHP</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/laravel.svg" alt="" width="44" height="44" /><span>Laravel</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/javascript.svg" alt="" width="44" height="44" /><span>JavaScript</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/typescript.svg" alt="" width="44" height="44" /><span>TypeScript</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/react.svg" alt="" width="44" height="44" /><span>React</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/nodejs.svg" alt="" width="44" height="44" /><span>Node.js</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/mysql.svg" alt="" width="44" height="44" /><span>MySQL</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/postgresql.svg" alt="" width="44" height="44" /><span>PostgreSQL</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/docker.svg" alt="" width="44" height="44" /><span>Docker</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/git.svg" alt="" width="44" height="44" /><span>Git</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/aws.svg" alt="" width="44" height="44" /><span>AWS</span></div>
+                <div class="stack-item"><img src="./assets/img/svg/redis.svg" alt="" width="44" height="44" /><span>Redis</span></div>
+            </div>
+        </section>
 
-                    <div>
-                        <h3>Valorant</h3>
-                        <span>NextJS | Typescript | TailwindCSS | Valorant-API</span>
-                    </div>
-                </a>
+        <section class="projects section" id="projects">
+            <div class="section-heading projects-heading">
+                <div>
+                    <p class="section-kicker">03 — Projetos</p>
+                    <h2>Trabalhos selecionados.</h2>
+                </div>
+                <a class="text-link" href="https://github.com/robertgoncalvesbatista/" target="_blank"
+                    rel="noopener noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="project-card">
-                <a href="https://robertgoncalvesbatista.github.io/kings-and-pigs/" target="_blank">
-                    <img src="./assets/img/kings-pigs.png" alt="Kings and Pigs" />
 
-                    <div>
-                        <h3>Kings and Pigs</h3>
-                        <span>HTML | CSS | Javascript</span>
-                    </div>
-                </a>
+            <div class="projects-container">
+                <article class="project-card project-featured">
+                    <a href="https://robertgoncalvesbatista.github.io/pokemon/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Abrir projeto Pokémon">
+                        <div class="project-image"><img src="./assets/img/pokemon.webp"
+                            alt="Projeto de catálogo Pokémon" width="960" height="483" loading="lazy" decoding="async" /></div>
+                        <div class="project-content">
+                            <div><p class="project-number">01</p><h3>Pokémon</h3></div>
+                            <p>Catálogo interativo com consumo da PokeAPI e interface responsiva.</p>
+                            <div class="tags"><span>React</span><span>TypeScript</span><span>PokeAPI</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <a href="https://robertgoncalvesbatista.github.io/valorant/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Abrir projeto Valorant">
+                        <div class="project-image"><img src="./assets/img/valorant.webp"
+                            alt="Projeto de agentes do Valorant" width="960" height="483" loading="lazy" decoding="async" /></div>
+                        <div class="project-content">
+                            <div><p class="project-number">02</p><h3>Valorant</h3></div>
+                            <p>Exploração de agentes e dados oficiais da API do jogo.</p>
+                            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>API</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <a href="https://robertgoncalvesbatista.github.io/one-piece/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Abrir projeto One Piece">
+                        <div class="project-image"><img src="./assets/img/one-piece.webp"
+                            alt="Projeto temático de One Piece" width="960" height="483" loading="lazy" decoding="async" /></div>
+                        <div class="project-content">
+                            <div><p class="project-number">03</p><h3>One Piece</h3></div>
+                            <p>Experiência visual responsiva inspirada no universo da série.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <a href="https://robertgoncalvesbatista.github.io/kings-and-pigs/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Abrir projeto Kings and Pigs">
+                        <div class="project-image"><img src="./assets/img/kings-pigs.webp"
+                            alt="Projeto do jogo Kings and Pigs" width="960" height="483" loading="lazy" decoding="async" /></div>
+                        <div class="project-content">
+                            <div><p class="project-number">04</p><h3>Kings and Pigs</h3></div>
+                            <p>Minijogo criado para praticar lógica, animações e eventos.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        </div>
+                    </a>
+                </article>
             </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <p class="section-kicker">04 — Contato</p>
+            <h2>Vamos construir algo juntos?</h2>
+            <a href="mailto:robert.comunicar@gmail.com">robert.comunicar@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <p>© <span id="current-year">2026</span> Robert Gonçalves Batista</p>
+        <div class="footer-links">
+            <a href="https://github.com/robertgoncalvesbatista/" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub de Robert">GitHub</a>
+            <a href="https://www.instagram.com/robert_docker/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram de Robert">Instagram</a>
+            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn de Robert">LinkedIn</a>
         </div>
-    </section>
-    <!-- Projects Section End -->
-
-    <div class="copyright">
-        <p>© Robert Gonçalves Batista | All Right Reserved.</p>
-
-        <div>
-            <a href="https://github.com/robertgoncalvesbatista/" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/robert_docker/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/robert-gon%C3%A7alves-batista-092985189/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Javascript -->
-    <script src="./assets/js/index.js"></script>
+    </footer>
 </body>
 
 </html>
